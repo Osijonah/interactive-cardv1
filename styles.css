@@ -1,0 +1,127 @@
+/* .white{
+    max-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+body{
+    margin: 0;
+    max-width: 100%;
+}
+.main{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 695px;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+}
+.bkgrd{
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    /* position: absolute; */
+    width: 30%;
+}
+
+form{
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-flow: column nowrap;
+    height: 260px;
+    justify-content: space-around;
+    width: 300px;
+    position: absolute;
+    margin: auto 0;
+    right: 20%;
+    bottom: 0;
+    top: 45%;
+    transform: translateY(-65%);
+}
+.form div{
+    color: hsl(278, 68%, 11%);
+}
+::placeholder{
+    color: hsl(270, 3%, 87%);
+}
+input{
+    box-sizing: border-box;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 4px;
+    height: 35px;
+    padding-left: 15px;
+    width: 297px;
+}
+#datecvc{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.date{
+    border-radius: 4px;
+    width: 60px;
+}
+.cvc-input{
+    border-radius: 4px;
+    width: 130px;
+}
+.btn{
+    height: 40px;
+    margin-top: 10px;
+    width: 300px;
+}
+button{
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    width: 300px;
+}
+.front {
+    background: url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    left: 90px;
+    top: 90px;
+}
+.front div{
+    /* margin-bottom: 30px; */
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.front .img{
+    margin-bottom: 50px;
+}
+.span span{
+    color: #fff;
+    font-size: 40px;
+}
+.front .name{
+    color: #fff;
+    float: left;
+    margin-left: 30px;
+}
+.front .mmyy{
+    color: #fff;
+    float: right;
+    margin-right: 140px;
+}
+.back {
+    background: url(images/bg-card-back.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 40%;
+    position: absolute;
+    left: 190px;
+    top: 360px;
+    width: 40%;
+}
+.back p{
+    color: #fff;
+    margin-left: 365px;
+    margin-top: 112px;
+}

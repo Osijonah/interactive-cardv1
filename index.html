@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Card Details</title>
+</head>
+<body>
+    <div class="main">
+        <div class="bkgrd"></div>
+        <div class="white">
+            <form action="">
+                <div>
+                    <label for="cardnumber">CARDHOLDER NAME
+                    </label> <br>
+                    <input type="text" id="cardname" name="cardnumber" placeholder="e.g. Jane Appleseed">
+                </div>
+                <div>
+                    <label>CARD NUMBER</label><br>
+                    <input type="number"  id="cardnumber" placeholder="e.g. 1234 5678 9123 0000">
+                </div>
+                <div id="datecvc">
+                    <div>
+                        <label>EXP. DATE(MM/YY)</label><br>
+                        <input type="number" placeholder="MM" id="mm" class="date">
+                        <input type="number" placeholder="YY" id="yy" class="date">
+                    </div>
+                    
+                    <div id="cvc">
+                        <label>CVC</label><br>
+                        <input type="number" placeholder="e.g. 123" class="cvc-input">
+                    </div>
+                </div>
+                
+                <div class="btn">
+                    <button>Confirm</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="front">
+        <div class="img"><img src="images/card-logo.svg" alt="" srcset=""></div>
+        <div class="span">
+            <span>0000 0000 0000 0000</span>
+        </div>
+        <p class="name">JANE APPLESEED</p>
+        <p class="mmyy">00/00</p>
+    </div>
+    <div class="back">
+        <p class="cvc">000</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
