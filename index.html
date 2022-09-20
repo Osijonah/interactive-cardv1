@@ -1,3 +1,7 @@
+<!-- to-do list
+-form validation
+-media queries -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,26 +16,30 @@
     <div class="main">
         <div class="bkgrd"></div>
         <div class="white">
-            <form action="">
-                <div>
+            <form class="form" action="">
+                <div class="input-div">
                     <label for="cardnumber">CARDHOLDER NAME
                     </label> <br>
                     <input type="text" id="cardname" name="cardnumber" placeholder="e.g. Jane Appleseed">
+                    <small></small>
                 </div>
-                <div>
+                <div class="input-div">
                     <label>CARD NUMBER</label><br>
                     <input type="number"  id="cardnumber" placeholder="e.g. 1234 5678 9123 0000">
+                    <small></small>
                 </div>
-                <div id="datecvc">
-                    <div>
+                <div class="input-div" id="datecvc">
+                    <div id="exp">
                         <label>EXP. DATE(MM/YY)</label><br>
                         <input type="number" placeholder="MM" id="mm" class="date">
                         <input type="number" placeholder="YY" id="yy" class="date">
+                        <small></small>
                     </div>
                     
-                    <div id="cvc">
+                    <div class="input-div" id="cvc">
                         <label>CVC</label><br>
                         <input type="number" placeholder="e.g. 123" class="cvc-input">
+                        <small></small>
                     </div>
                 </div>
                 
@@ -42,17 +50,21 @@
         </div>
 
     </div>
-    <div class="front">
-        <div class="img"><img src="images/card-logo.svg" alt="" srcset=""></div>
-        <div class="span">
-            <span>0000 0000 0000 0000</span>
+        <div class="front">
+            <div class="img"><img src="images/card-logo.svg" alt="" srcset=""></div>
+            <div class="span">
+                <span>0000 0000 0000 0000</span>
+            </div>
+            <p class="name">JANE APPLESEED</p>
+            <div class="exp">
+                <span class="mm">00</span>
+                <span>/</span>
+                <span class="yy">00</span>
+            </div>
         </div>
-        <p class="name">JANE APPLESEED</p>
-        <p class="mmyy">00/00</p>
-    </div>
-    <div class="back">
-        <p class="cvc">000</p>
-    </div>
+        <div class="back">
+            <p class="cvc">000</p>
+        </div>
     <script src="app.js"></script>
 </body>
 </html>

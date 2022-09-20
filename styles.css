@@ -1,9 +1,18 @@
-/* .white{
-    max-height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+.input-div.error input {
+    border-color: var(--error-color);
+}
+.input-div small {
+    color: var(--error-color);
+}
+.error {
+    color: var(--error-color);
+}
+
 body{
     margin: 0;
     max-width: 100%;
@@ -21,16 +30,16 @@ body{
     background-image: url(images/bg-main-desktop.png);
     background-repeat: no-repeat;
     height: 100%;
-    /* position: absolute; */
     width: 30%;
 }
 
-form{
-    /* border: 1px solid #000; */
+.form{
     display: flex;
     flex-flow: column nowrap;
     height: 260px;
-    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
     width: 300px;
     position: absolute;
     margin: auto 0;
@@ -41,6 +50,12 @@ form{
 }
 .form div{
     color: hsl(278, 68%, 11%);
+}
+label{
+    font-size: 12px;
+}
+.center{
+    text-align: center;
 }
 ::placeholder{
     color: hsl(270, 3%, 87%);
@@ -58,13 +73,19 @@ input{
     flex-flow: row nowrap;
     justify-content: space-between;
 }
+#exp{
+    margin-right: 15px;
+}
 .date{
     border-radius: 4px;
     width: 60px;
 }
+#cvc{
+    width: 161px;
+}
 .cvc-input{
     border-radius: 4px;
-    width: 130px;
+    width: 160px;
 }
 .btn{
     height: 40px;
@@ -80,6 +101,7 @@ button{
 }
 .front {
     background: url(images/bg-card-front.png);
+    background-size: contain;
     background-repeat: no-repeat;
     border-radius: 10px;
     height: 40%;
@@ -89,7 +111,6 @@ button{
     top: 90px;
 }
 .front div{
-    /* margin-bottom: 30px; */
     margin-top: 30px;
     margin-left: 30px;
 }
@@ -105,14 +126,16 @@ button{
     float: left;
     margin-left: 30px;
 }
-.front .mmyy{
+.front .exp{
     color: #fff;
     float: right;
     margin-right: 140px;
+    margin-top: 15px;
 }
 .back {
     background: url(images/bg-card-back.png);
     background-repeat: no-repeat;
+    background-size: contain;
     border-radius: 10px;
     height: 40%;
     position: absolute;
@@ -124,4 +147,167 @@ button{
     color: #fff;
     margin-left: 365px;
     margin-top: 112px;
+}
+
+@media only screen and (max-width: 375px){
+    body {
+            margin: 0;
+            max-width: 375px;
+        }
+    
+        .main {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            height: 704px;
+            margin-bottom: 0;
+            margin-top: 0;
+            position: relative;
+        }
+    
+        .bkgrd {
+            background-image: url(images/bg-main-mobile.png);
+            background-repeat: no-repeat;
+            width: 375px;
+        }
+    
+        .form {
+            display: flex;
+            flex-flow: column nowrap;
+            align-content: center;
+            justify-content: space-between;
+            position: absolute;
+            margin: auto 0;
+            left: 30px;
+            right: 0;
+            bottom: 0;
+            top: 80%;
+            transform: translateY(-65%);
+        }
+    
+        .form div {
+            color: hsl(278, 68%, 11%);
+        }
+    
+        label {
+            font-size: 12px;
+        }
+    
+        .center {
+            text-align: center;
+        }
+    
+        ::placeholder {
+            color: hsl(270, 3%, 87%);
+        }
+    
+        input {
+            box-sizing: border-box;
+            border: 1px solid hsl(270, 3%, 87%);
+            border-radius: 4px;
+            height: 35px;
+            padding-left: 15px;
+            width: 297px;
+        }
+    
+        #datecvc {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+    
+        #exp {
+            margin-right: 15px;
+        }
+    
+        .date {
+            border-radius: 4px;
+            width: 60px;
+        }
+    
+        #cvc {
+            width: 161px;
+        }
+    
+        .cvc-input {
+            border-radius: 4px;
+            width: 160px;
+        }
+    
+        .btn {
+            height: 40px;
+            margin-top: 10px;
+            width: 300px;
+        }
+    
+        button {
+            background-color: hsl(278, 68%, 11%);
+            border-radius: 4px;
+            color: #fff;
+            height: 40px;
+            width: 300px;
+        }
+        .front {
+            background: url(images/bg-card-front.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 10px;
+            box-shadow: 0 10px 50px -10px hsl(279, 6%, 55%) ;
+            height: 25%;
+            width: 75%;
+            position: absolute;
+            left: 20px;
+            top: 130px;
+            z-index: 2;
+        }
+    
+        .front .img {
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        .span{
+            margin-bottom: 5px;
+
+        }
+        .span span {
+            color: #fff;
+            font-size: 25px;
+        }
+    
+        .front .name {
+            color: #fff;
+            float: left;
+            margin-left: 25px;
+            font-size: 12px;
+        }
+    
+        .front .exp {
+            color: #fff;
+            float: right;
+            font-size: 15px;
+            margin-right: 25px;
+            margin-top: 8px;
+        }
+    
+        .back {
+            background: url(images/bg-card-back.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 10px;
+            height: 25%;
+            position: absolute;
+            left: 70px;
+            top: 40px;
+            width: 75%;
+            z-index: 1;
+        }
+    
+        .back p {
+            color: #fff;
+            margin-left: 220px;
+            margin-top: 67px;
+        }
+        .img img{
+            width: 50px;
+        }
 }
