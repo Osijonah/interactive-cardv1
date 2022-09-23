@@ -459,7 +459,9 @@ body {
         #cvc {
             width: 40vw;
         }
-
+        #cvc small{
+            font-size: 80%;
+        }
         .cvc-input {
             border-radius: 4px;
             width: 40vw;
@@ -555,6 +557,9 @@ body {
     }
 
     @media only screen and (max-width:320px) {
+        #cvc small {
+                font-size: 75%;
+            }
         .front {
             background: url(images/bg-card-front.png);
             background-repeat: no-repeat;
