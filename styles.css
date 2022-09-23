@@ -5,328 +5,339 @@
     --success-color: #28a745;
     --warning-color: #ffc107;
 }
+
 .input-div.error input {
     border-color: var(--error-color);
 }
+
 .input-div small {
     color: var(--error-color);
 }
+
 .error {
     color: var(--error-color);
 }
-body{
+
+body {
     font-family: "Space Grotesk";
     font-weight: 500;
     font-size: 18px;
 }
+
 @media only screen and (max-width: 1440px) {
     body {
-            margin: 0;
-            max-width: 100%;
-        }
-    
-        .main {
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            height: 695px;
-            margin-bottom: 0;
-            margin-top: 0;
-            position: relative;
-        }
-    
-        .bkgrd {
-            background-image: url(images/bg-main-desktop.png);
-            background-repeat: no-repeat;
-            height: 100%;
-            width: 30%;
-        }
-    
-        .form {
-            display: flex;
-            flex-flow: column nowrap;
-            height: 260px;
-            align-content: center;
-            align-items: center;
-            justify-content: space-between;
-            width: 25vw;
-            position: relative;
-            margin: auto 0;
-            margin-left: 35vw;
-            margin-top: 12vh;
-            right: 20%;
-        }
-    
-        .form div {
-            color: hsl(278, 68%, 11%);
-        }
-    
-        label {
-            font-size: 68%;
-        }
-    
-        .center {
-            text-align: center;
-        }
-    
-        ::placeholder {
-            color: hsl(270, 3%, 87%);
-        }
-    
-        input {
-            box-sizing: border-box;
-            border: 1px solid hsl(270, 3%, 87%);
-            border-radius: 4px;
-            height: 35px;
-            width: 22vw;
-        }
-    
-        #datecvc {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            margin-left: -11vw;
-        }
-    
-        #exp {
-            margin-right: 0.3vw;
-        }
-    
-        .date {
-            border-radius: 4px;
-            margin-right: 0.5vw;
-            width: 4vw;
-        }
-    
-        #cvc {
-            width: 0.9vw;
-        }
-    
-        .cvc-input {
-            border-radius: 4px;
-            width: 12vw;
-        }
-    
-        .btn {
-            height: 40px;
-            margin-top: 0.9vw;
-            width: 22vw;
-        }
-    
-        button {
-            background-color: hsl(278, 68%, 11%);
-            border-radius: 4px;
-            color: #fff;
-            height: 40px;
-            width: 22vw;
-        }
-    
-        .front {
-            background: url(images/bg-card-front.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            border-radius: 10px;
-            height: 30%;
-            width: 30%;
-            position: absolute;
-            left: 9%;
-            top: 15%;
-        }
-    
-        .front div {
-            margin-top: 2vw;
-            margin-left: 2vw;
-        }
-    
-        .front .img {
-            margin-bottom: 3.2vw;
-        }
-    
-        .img img {
-            width: 5vw;
-        }
-    
-        .span span {
-            color: #fff;
-            font-size: 150%;
-            font-size-adjust: auto;
-        }
-    
-        .front .name {
-            color: #fff;
-            float: left;
-            font-size: 80%;
-            margin-top: 2vw;
-            margin-left: 2vw;
-        }
-    
-        .front .exp {
-            color: #fff;
-            float: right;
-            font-size: 80%;
-            margin-right: 5vw;
-            margin-top: 2vw;
-        }
-    
-        .back {
-            background: url(images/bg-card-back.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            border-radius: 10px;
-            height: 30%;
-            position: absolute;
-            left: 15vw;
-            top: 50vh;
-            width: 30%;
-        }
-    
-        .back p {
-            color: #fff;
-            margin-left: 22.8vw;
-            margin-top: 7.25vw;
-        }
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .main {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        height: 695px;
+        margin-bottom: 0;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .bkgrd {
+        background-image: url(images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 30%;
+    }
+
+    .form {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 260px;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 25vw;
+        position: relative;
+        margin: auto 0;
+        margin-left: 35vw;
+        margin-top: 12vh;
+        right: 20%;
+    }
+
+    .form div {
+        color: hsl(278, 68%, 11%);
+    }
+
+    label {
+        font-size: 68%;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    ::placeholder {
+        color: hsl(270, 3%, 87%);
+    }
+
+    input {
+        box-sizing: border-box;
+        border: 1px solid hsl(270, 3%, 87%);
+        border-radius: 4px;
+        height: 35px;
+        width: 22vw;
+    }
+
+    #datecvc {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-left: -11vw;
+    }
+
+    #exp {
+        margin-right: 0.3vw;
+    }
+
+    .date {
+        border-radius: 4px;
+        margin-right: 0.5vw;
+        width: 4vw;
+    }
+
+    #cvc {
+        width: 0.9vw;
+    }
+
+    .cvc-input {
+        border-radius: 4px;
+        width: 12vw;
+    }
+
+    .btn {
+        height: 40px;
+        margin-top: 0.9vw;
+        width: 22vw;
+    }
+
+    button {
+        background-color: hsl(278, 68%, 11%);
+        border-radius: 4px;
+        color: #fff;
+        height: 40px;
+        width: 22vw;
+    }
+
+    .front {
+        background: url(images/bg-card-front.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        height: 30%;
+        width: 30%;
+        position: absolute;
+        left: 9%;
+        top: 15%;
+    }
+
+    .front div {
+        margin-top: 2vw;
+        margin-left: 2vw;
+    }
+
+    .front .img {
+        margin-bottom: 3.2vw;
+    }
+
+    .img img {
+        width: 5vw;
+    }
+
+    .span span {
+        color: #fff;
+        font-size: 150%;
+        font-size-adjust: auto;
+    }
+
+    .front .name {
+        color: #fff;
+        float: left;
+        font-size: 80%;
+        margin-top: 2vw;
+        margin-left: 2vw;
+    }
+
+    .front .exp {
+        color: #fff;
+        float: right;
+        font-size: 80%;
+        margin-right: 5vw;
+        margin-top: 2vw;
+    }
+
+    .back {
+        background: url(images/bg-card-back.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 10px;
+        height: 30%;
+        position: absolute;
+        left: 15vw;
+        top: 50vh;
+        width: 30%;
+    }
+
+    .back p {
+        color: #fff;
+        margin-left: 22.8vw;
+        margin-top: 7.25vw;
+    }
 }
+
 @media only screen and (max-width:1069px) {
     #exp {
-            margin-right: 0.3vw;
-        }
-    
-        .date {
-            border-radius: 4px;
-            margin-right: 0.5vw;
-            width: 4vw;
-        }
-    
-        #cvc {
-            width: 0.9vw;
-        }
-    
-        .cvc-input {
-            border-radius: 4px;
-            width: 12vw;
-        }
+        margin-right: 0.3vw;
+    }
+
+    .date {
+        border-radius: 4px;
+        margin-right: 0.5vw;
+        width: 4vw;
+    }
+
+    #cvc {
+        width: 0.9vw;
+    }
+
+    .cvc-input {
+        border-radius: 4px;
+        width: 12vw;
+    }
+
     .front {
-            background: url(images/bg-card-front.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            border-radius: 10px;
-            height: 30%;
-            width: 30%;
-            position: absolute;
-            left: 9%;
-            top: 15%;
-        }
-    
-        .front div {
-            margin-top: 2vw;
-            margin-left: 2vw;
-        }
-    
-        .front .img {
-            margin-bottom: 3.2vw;
-        }
-    
-        .img img {
-            width: 5vw;
-        }
-    
-        .span span {
-            color: #fff;
-            font-size: 120%;
-            font-size-adjust: auto;
-        }
-    
-        .front .name {
-            color: #fff;
-            float: left;
-            font-size: 70%;
-            margin-top: 2vw;
-            margin-left: 2vw;
-        }
-    
-        .front .exp {
-            color: #fff;
-            float: right;
-            font-size: 70%;
-            margin-right: 5vw;
-            margin-top: 2vw;
-        }
-    
-        .back {
-            background: url(images/bg-card-back.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            border-radius: 10px;
-            height: 30%;
-            position: absolute;
-            left: 15vw;
-            top: 50vh;
-            width: 30%;
-        }
-    
-        .back p {
-            color: #fff;
-            font-size: 80%;
-            margin-left: 22.8vw;
-            margin-top: 7.25vw;
-        }
+        background: url(images/bg-card-front.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        height: 30%;
+        width: 30%;
+        position: absolute;
+        left: 9%;
+        top: 15%;
+    }
+
+    .front div {
+        margin-top: 2vw;
+        margin-left: 2vw;
+    }
+
+    .front .img {
+        margin-bottom: 3.2vw;
+    }
+
+    .img img {
+        width: 5vw;
+    }
+
+    .span span {
+        color: #fff;
+        font-size: 120%;
+        font-size-adjust: auto;
+    }
+
+    .front .name {
+        color: #fff;
+        float: left;
+        font-size: 70%;
+        margin-top: 2vw;
+        margin-left: 2vw;
+    }
+
+    .front .exp {
+        color: #fff;
+        float: right;
+        font-size: 70%;
+        margin-right: 5vw;
+        margin-top: 2vw;
+    }
+
+    .back {
+        background: url(images/bg-card-back.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 10px;
+        height: 30%;
+        position: absolute;
+        left: 15vw;
+        top: 50vh;
+        width: 30%;
+    }
+
+    .back p {
+        color: #fff;
+        font-size: 80%;
+        margin-left: 22.8vw;
+        margin-top: 7.25vw;
+    }
 }
+
 @media only screen and (max-width:900px) {
     #datecvc {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            margin-left: -1vw;
-        }
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-left: -1vw;
+    }
+
     /* #exp {
             margin-right: 0.1vw;
         } */
-    
-        .date {
-            border-radius: 4px;
-            margin-right: 0.5vw;
-            width: 4vw;
-        }
-    
-        #cvc {
-            width: 10vw;
-        }
-    
-        .cvc-input {
-            border-radius: 4px;
-            width: 11vw;
-        }
+
+    .date {
+        border-radius: 4px;
+        margin-right: 0.5vw;
+        width: 4vw;
+    }
+
+    #cvc {
+        width: 10vw;
+    }
+
+    .cvc-input {
+        border-radius: 4px;
+        width: 11vw;
+    }
+
     .front {
-            background: url(images/bg-card-front.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            border-radius: 10px;
-            height: 30%;
-            width: 30%;
-            position: absolute;
-            left: 9%;
-            top: 15%;
+        background: url(images/bg-card-front.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        height: 30%;
+        width: 30%;
+        position: absolute;
+        left: 9%;
+        top: 15%;
+    }
+
+    .front div {
+        margin-top: 2vw;
+        margin-left: 2vw;
         }
-    
-        .front div {
-            margin-top: 2vw;
-            margin-left: 2vw;
-        }
-    
+
+
         .front .img {
             margin-bottom: 3.2vw;
         }
-    
+
         .img img {
             width: 5vw;
         }
-    
+
         .span span {
             color: #fff;
             font-size: 110%;
             font-size-adjust: auto;
         }
-    
+
         .front .name {
             color: #fff;
             float: left;
@@ -334,7 +345,7 @@ body{
             margin-top: 2vw;
             margin-left: 2vw;
         }
-    
+
         .front .exp {
             color: #fff;
             float: right;
@@ -342,7 +353,7 @@ body{
             margin-right: 5vw;
             margin-top: 2vw;
         }
-    
+
         .back {
             background: url(images/bg-card-back.png);
             background-repeat: no-repeat;
@@ -354,22 +365,22 @@ body{
             top: 50vh;
             width: 30%;
         }
-    
+
         .back p {
             color: #fff;
             font-size: 60%;
             margin-left: 22.8vw;
             margin-top: 7.25vw;
         }
-}
+    }
 
 
-@media only screen and (max-width: 375px){
-    body {
+    @media only screen and (max-width: 375px) {
+        body {
             margin: 0;
             max-width: 375px;
         }
-    
+
         .main {
             display: flex;
             flex-flow: column nowrap;
@@ -379,14 +390,14 @@ body{
             margin-top: 0;
             position: relative;
         }
-    
+
         .bkgrd {
             background-image: url(images/bg-main-mobile.png);
             background-repeat: no-repeat;
             height: 30%;
             width: 100%;
         }
-    
+
         .form {
             display: flex;
             flex-flow: column nowrap;
@@ -400,24 +411,24 @@ body{
             position: relative;
             margin-top: 20vh;
         }
-    
+
         .form div {
             color: hsl(278, 68%, 11%);
             margin-bottom: 2.5vh;
         }
-    
+
         label {
             font-size: 12px;
         }
-    
+
         .center {
             text-align: center;
         }
-    
+
         ::placeholder {
             color: hsl(270, 3%, 87%);
         }
-    
+
         input {
             box-sizing: border-box;
             border: 1px solid hsl(270, 3%, 87%);
@@ -427,38 +438,38 @@ body{
             padding-left: 5vw;
             width: 80vw;
         }
-    
+
         #datecvc {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
             margin-left: 0.5vw;
         }
-    
+
         #exp {
             margin-right: 5vw;
         }
-    
+
         .date {
             border-radius: 4px;
             margin-right: 2vw;
             width: 15vw;
         }
-    
+
         #cvc {
             width: 40vw;
         }
-    
+
         .cvc-input {
             border-radius: 4px;
             width: 40vw;
         }
-    
+
         .btn {
             height: 40px;
             width: 80vw;
         }
-    
+
         button {
             background-color: hsl(278, 68%, 11%);
             border-radius: 4px;
@@ -466,35 +477,39 @@ body{
             height: 40px;
             width: 80vw;
         }
+
         .front {
             background: url(images/bg-card-front.png);
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: 100%;
             border-radius: 10px;
-            box-shadow: 0 10px 50px -10px hsl(279, 6%, 55%) ;
-            height: 25%;
-            width: 75%;
-            position: absolute;
+            box-shadow: 0 10px 50px -10px hsl(279, 6%, 55%);
+            height: 25vh;
+            min-height: 143px;
+            width: 73%;
+            position: fixed;
             left: 4vw;
-            top: 22vh;
+            top: 22.4vh;
             z-index: 2;
         }
-    
+
         .front .img {
             margin-top: 3vw;
             margin-bottom: 6vw;
             margin-left: 4vw;
         }
-        .span{
+
+        .span {
             margin-bottom: 3vw;
             padding-left: 3vw;
 
         }
+
         .span span {
             color: #fff;
             font-size: 110%;
         }
-    
+
         .front .name {
             color: #fff;
             float: left;
@@ -502,7 +517,7 @@ body{
             margin-top: 1.5vw;
             font-size: 70%;
         }
-    
+
         .front .exp {
             color: #fff;
             float: right;
@@ -510,48 +525,67 @@ body{
             margin-right: 5vw;
             margin-top: 1.3vw;
         }
-    
+
         .back {
             background: url(images/bg-card-back.png);
             background-repeat: no-repeat;
             background-size: contain;
             border-radius: 10px;
             height: 25%;
-            position: absolute;
+            min-height: 140px;
+            position: fixed;
             left: 20vw;
             top: 8.1vh;
             width: 75%;
             z-index: 1;
         }
-    
+
         .back p {
-            position: fixed;
+            position: sticky;
             color: #fff;
-            margin-left: 59vw;
-            margin-top: 18.5vw;
+            font-size: 70%;
+            margin-left: 57vw;
+            margin-top: 17.5vw;
         }
-        .img img{
+
+        .img img {
             width: 15vw;
         }
-}
-@media only screen and (max-width:320px) {
-    .front .img {
+    }
+
+    @media only screen and (max-width:320px) {
+        .front {
+            background: url(images/bg-card-front.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 50px -10px hsl(279, 6%, 55%);
+            height: 25vh;
+            min-height: 143px;
+            width: 75%;
+            position: fixed;
+            left: 4vw;
+            top: 22.4vh;
+            z-index: 2;
+        }
+
+        .front .img {
             margin-top: 3vw;
             margin-bottom: 6vw;
             margin-left: 4vw;
         }
-    
+
         .span {
             margin-bottom: 3vw;
             padding-left: 3vw;
-    
+
         }
-    
+
         .span span {
             color: #fff;
             font-size: 90%;
         }
-    
+
         .front .name {
             color: #fff;
             float: left;
@@ -559,7 +593,7 @@ body{
             margin-top: 1.5vw;
             font-size: 60%;
         }
-    
+
         .front .exp {
             color: #fff;
             float: right;
@@ -567,28 +601,30 @@ body{
             margin-right: 5vw;
             margin-top: 1.3vw;
         }
-    
+
         .back {
             background: url(images/bg-card-back.png);
             background-repeat: no-repeat;
             background-size: contain;
             border-radius: 10px;
             height: 25%;
-            position: absolute;
+            min-height: 140px;
+            position: fixed;
             left: 20vw;
             top: 8.1vh;
             width: 75%;
             z-index: 1;
         }
-    
+
         .back p {
-            position: fixed;
-            color: #fff;
-            margin-left: 59vw;
-            margin-top: 18.5vw;
+            position: sticky;
+            color: #fff ;
+            font-size: 70%;
+            margin-left: 57vw;
+            margin-top: 17.5vw;
         }
-    
+
         .img img {
             width: 15vw;
         }
-}
+    }
