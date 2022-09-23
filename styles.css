@@ -481,7 +481,8 @@ body {
         .front {
             background: url(images/bg-card-front.png);
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: cover;
+            background-clip: border-box;
             border-radius: 10px;
             box-shadow: 0 10px 50px -10px hsl(279, 6%, 55%);
             height: 25vh;
@@ -557,7 +558,8 @@ body {
         .front {
             background: url(images/bg-card-front.png);
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: cover;
+            background-clip: border-box;
             border-radius: 10px;
             box-shadow: 0 10px 50px -10px hsl(279, 6%, 55%);
             height: 25vh;
