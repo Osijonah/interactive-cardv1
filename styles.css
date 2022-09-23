@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 :root {
     --error-color: #dc3545;
     --success-color: #28a745;
@@ -12,142 +14,355 @@
 .error {
     color: var(--error-color);
 }
-
 body{
-    margin: 0;
-    max-width: 100%;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-size: 18px;
 }
-.main{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    height: 695px;
-    margin-bottom: 0;
-    margin-top: 0;
-    position: relative;
+@media only screen and (max-width: 1440px) {
+    body {
+            margin: 0;
+            max-width: 100%;
+        }
+    
+        .main {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            height: 695px;
+            margin-bottom: 0;
+            margin-top: 0;
+            position: relative;
+        }
+    
+        .bkgrd {
+            background-image: url(images/bg-main-desktop.png);
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 30%;
+        }
+    
+        .form {
+            display: flex;
+            flex-flow: column nowrap;
+            height: 260px;
+            align-content: center;
+            align-items: center;
+            justify-content: space-between;
+            width: 25vw;
+            position: relative;
+            margin: auto 0;
+            margin-left: 35vw;
+            margin-top: 12vh;
+            right: 20%;
+        }
+    
+        .form div {
+            color: hsl(278, 68%, 11%);
+        }
+    
+        label {
+            font-size: 68%;
+        }
+    
+        .center {
+            text-align: center;
+        }
+    
+        ::placeholder {
+            color: hsl(270, 3%, 87%);
+        }
+    
+        input {
+            box-sizing: border-box;
+            border: 1px solid hsl(270, 3%, 87%);
+            border-radius: 4px;
+            height: 35px;
+            width: 22vw;
+        }
+    
+        #datecvc {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin-left: -11vw;
+        }
+    
+        #exp {
+            margin-right: 0.3vw;
+        }
+    
+        .date {
+            border-radius: 4px;
+            margin-right: 0.5vw;
+            width: 4vw;
+        }
+    
+        #cvc {
+            width: 0.9vw;
+        }
+    
+        .cvc-input {
+            border-radius: 4px;
+            width: 12vw;
+        }
+    
+        .btn {
+            height: 40px;
+            margin-top: 0.9vw;
+            width: 22vw;
+        }
+    
+        button {
+            background-color: hsl(278, 68%, 11%);
+            border-radius: 4px;
+            color: #fff;
+            height: 40px;
+            width: 22vw;
+        }
+    
+        .front {
+            background: url(images/bg-card-front.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            height: 30%;
+            width: 30%;
+            position: absolute;
+            left: 9%;
+            top: 15%;
+        }
+    
+        .front div {
+            margin-top: 2vw;
+            margin-left: 2vw;
+        }
+    
+        .front .img {
+            margin-bottom: 3.2vw;
+        }
+    
+        .img img {
+            width: 5vw;
+        }
+    
+        .span span {
+            color: #fff;
+            font-size: 150%;
+            font-size-adjust: auto;
+        }
+    
+        .front .name {
+            color: #fff;
+            float: left;
+            font-size: 80%;
+            margin-top: 2vw;
+            margin-left: 2vw;
+        }
+    
+        .front .exp {
+            color: #fff;
+            float: right;
+            font-size: 80%;
+            margin-right: 5vw;
+            margin-top: 2vw;
+        }
+    
+        .back {
+            background: url(images/bg-card-back.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 10px;
+            height: 30%;
+            position: absolute;
+            left: 15vw;
+            top: 50vh;
+            width: 30%;
+        }
+    
+        .back p {
+            color: #fff;
+            margin-left: 22.8vw;
+            margin-top: 7.25vw;
+        }
 }
-.bkgrd{
-    background-image: url(images/bg-main-desktop.png);
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 30%;
+@media only screen and (max-width:1069px) {
+    #exp {
+            margin-right: 0.3vw;
+        }
+    
+        .date {
+            border-radius: 4px;
+            margin-right: 0.5vw;
+            width: 4vw;
+        }
+    
+        #cvc {
+            width: 0.9vw;
+        }
+    
+        .cvc-input {
+            border-radius: 4px;
+            width: 12vw;
+        }
+    .front {
+            background: url(images/bg-card-front.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            height: 30%;
+            width: 30%;
+            position: absolute;
+            left: 9%;
+            top: 15%;
+        }
+    
+        .front div {
+            margin-top: 2vw;
+            margin-left: 2vw;
+        }
+    
+        .front .img {
+            margin-bottom: 3.2vw;
+        }
+    
+        .img img {
+            width: 5vw;
+        }
+    
+        .span span {
+            color: #fff;
+            font-size: 120%;
+            font-size-adjust: auto;
+        }
+    
+        .front .name {
+            color: #fff;
+            float: left;
+            font-size: 70%;
+            margin-top: 2vw;
+            margin-left: 2vw;
+        }
+    
+        .front .exp {
+            color: #fff;
+            float: right;
+            font-size: 70%;
+            margin-right: 5vw;
+            margin-top: 2vw;
+        }
+    
+        .back {
+            background: url(images/bg-card-back.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 10px;
+            height: 30%;
+            position: absolute;
+            left: 15vw;
+            top: 50vh;
+            width: 30%;
+        }
+    
+        .back p {
+            color: #fff;
+            font-size: 80%;
+            margin-left: 22.8vw;
+            margin-top: 7.25vw;
+        }
+}
+@media only screen and (max-width:900px) {
+    #datecvc {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin-left: -1vw;
+        }
+    /* #exp {
+            margin-right: 0.1vw;
+        } */
+    
+        .date {
+            border-radius: 4px;
+            margin-right: 0.5vw;
+            width: 4vw;
+        }
+    
+        #cvc {
+            width: 10vw;
+        }
+    
+        .cvc-input {
+            border-radius: 4px;
+            width: 11vw;
+        }
+    .front {
+            background: url(images/bg-card-front.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            height: 30%;
+            width: 30%;
+            position: absolute;
+            left: 9%;
+            top: 15%;
+        }
+    
+        .front div {
+            margin-top: 2vw;
+            margin-left: 2vw;
+        }
+    
+        .front .img {
+            margin-bottom: 3.2vw;
+        }
+    
+        .img img {
+            width: 5vw;
+        }
+    
+        .span span {
+            color: #fff;
+            font-size: 110%;
+            font-size-adjust: auto;
+        }
+    
+        .front .name {
+            color: #fff;
+            float: left;
+            font-size: 60%;
+            margin-top: 2vw;
+            margin-left: 2vw;
+        }
+    
+        .front .exp {
+            color: #fff;
+            float: right;
+            font-size: 60%;
+            margin-right: 5vw;
+            margin-top: 2vw;
+        }
+    
+        .back {
+            background: url(images/bg-card-back.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 10px;
+            height: 30%;
+            position: absolute;
+            left: 15vw;
+            top: 50vh;
+            width: 30%;
+        }
+    
+        .back p {
+            color: #fff;
+            font-size: 60%;
+            margin-left: 22.8vw;
+            margin-top: 7.25vw;
+        }
 }
 
-.form{
-    display: flex;
-    flex-flow: column nowrap;
-    height: 260px;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    width: 300px;
-    position: absolute;
-    margin: auto 0;
-    right: 20%;
-    bottom: 0;
-    top: 45%;
-    transform: translateY(-65%);
-}
-.form div{
-    color: hsl(278, 68%, 11%);
-}
-label{
-    font-size: 12px;
-}
-.center{
-    text-align: center;
-}
-::placeholder{
-    color: hsl(270, 3%, 87%);
-}
-input{
-    box-sizing: border-box;
-    border: 1px solid hsl(270, 3%, 87%);
-    border-radius: 4px;
-    height: 35px;
-    padding-left: 15px;
-    width: 297px;
-}
-#datecvc{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-#exp{
-    margin-right: 15px;
-}
-.date{
-    border-radius: 4px;
-    width: 60px;
-}
-#cvc{
-    width: 161px;
-}
-.cvc-input{
-    border-radius: 4px;
-    width: 160px;
-}
-.btn{
-    height: 40px;
-    margin-top: 10px;
-    width: 300px;
-}
-button{
-    background-color: hsl(278, 68%, 11%);
-    border-radius: 4px;
-    color: #fff;
-    height: 40px;
-    width: 300px;
-}
-.front {
-    background: url(images/bg-card-front.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    height: 40%;
-    width: 40%;
-    position: absolute;
-    left: 90px;
-    top: 90px;
-}
-.front div{
-    margin-top: 30px;
-    margin-left: 30px;
-}
-.front .img{
-    margin-bottom: 50px;
-}
-.span span{
-    color: #fff;
-    font-size: 40px;
-}
-.front .name{
-    color: #fff;
-    float: left;
-    margin-left: 30px;
-}
-.front .exp{
-    color: #fff;
-    float: right;
-    margin-right: 140px;
-    margin-top: 15px;
-}
-.back {
-    background: url(images/bg-card-back.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 10px;
-    height: 40%;
-    position: absolute;
-    left: 190px;
-    top: 360px;
-    width: 40%;
-}
-.back p{
-    color: #fff;
-    margin-left: 365px;
-    margin-top: 112px;
-}
 
 @media only screen and (max-width: 375px){
     body {
@@ -168,25 +383,27 @@ button{
         .bkgrd {
             background-image: url(images/bg-main-mobile.png);
             background-repeat: no-repeat;
-            width: 375px;
+            height: 30%;
+            width: 100%;
         }
     
         .form {
             display: flex;
             flex-flow: column nowrap;
             align-content: center;
+            height: 67%;
             justify-content: space-between;
-            position: absolute;
             margin: auto 0;
-            left: 30px;
             right: 0;
-            bottom: 0;
-            top: 80%;
-            transform: translateY(-65%);
+            align-items: center;
+            width: 90vw;
+            position: relative;
+            margin-top: 20vh;
         }
     
         .form div {
             color: hsl(278, 68%, 11%);
+            margin-bottom: 2.5vh;
         }
     
         label {
@@ -206,38 +423,40 @@ button{
             border: 1px solid hsl(270, 3%, 87%);
             border-radius: 4px;
             height: 35px;
-            padding-left: 15px;
-            width: 297px;
+            margin-top: 1vh;
+            padding-left: 5vw;
+            width: 80vw;
         }
     
         #datecvc {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
+            margin-left: 0.5vw;
         }
     
         #exp {
-            margin-right: 15px;
+            margin-right: 5vw;
         }
     
         .date {
             border-radius: 4px;
-            width: 60px;
+            margin-right: 2vw;
+            width: 15vw;
         }
     
         #cvc {
-            width: 161px;
+            width: 40vw;
         }
     
         .cvc-input {
             border-radius: 4px;
-            width: 160px;
+            width: 40vw;
         }
     
         .btn {
             height: 40px;
-            margin-top: 10px;
-            width: 300px;
+            width: 80vw;
         }
     
         button {
@@ -245,7 +464,7 @@ button{
             border-radius: 4px;
             color: #fff;
             height: 40px;
-            width: 300px;
+            width: 80vw;
         }
         .front {
             background: url(images/bg-card-front.png);
@@ -256,37 +475,40 @@ button{
             height: 25%;
             width: 75%;
             position: absolute;
-            left: 20px;
-            top: 130px;
+            left: 4vw;
+            top: 22vh;
             z-index: 2;
         }
     
         .front .img {
-            margin-top: 15px;
-            margin-bottom: 20px;
+            margin-top: 3vw;
+            margin-bottom: 6vw;
+            margin-left: 4vw;
         }
         .span{
-            margin-bottom: 5px;
+            margin-bottom: 3vw;
+            padding-left: 3vw;
 
         }
         .span span {
             color: #fff;
-            font-size: 25px;
+            font-size: 110%;
         }
     
         .front .name {
             color: #fff;
             float: left;
-            margin-left: 25px;
-            font-size: 12px;
+            margin-left: 5vw;
+            margin-top: 1.5vw;
+            font-size: 70%;
         }
     
         .front .exp {
             color: #fff;
             float: right;
-            font-size: 15px;
-            margin-right: 25px;
-            margin-top: 8px;
+            font-size: 70%;
+            margin-right: 5vw;
+            margin-top: 1.3vw;
         }
     
         .back {
@@ -296,18 +518,77 @@ button{
             border-radius: 10px;
             height: 25%;
             position: absolute;
-            left: 70px;
-            top: 40px;
+            left: 20vw;
+            top: 8.1vh;
             width: 75%;
             z-index: 1;
         }
     
         .back p {
+            position: fixed;
             color: #fff;
-            margin-left: 220px;
-            margin-top: 67px;
+            margin-left: 59vw;
+            margin-top: 18.5vw;
         }
         .img img{
-            width: 50px;
+            width: 15vw;
+        }
+}
+@media only screen and (max-width:320px) {
+    .front .img {
+            margin-top: 3vw;
+            margin-bottom: 6vw;
+            margin-left: 4vw;
+        }
+    
+        .span {
+            margin-bottom: 3vw;
+            padding-left: 3vw;
+    
+        }
+    
+        .span span {
+            color: #fff;
+            font-size: 90%;
+        }
+    
+        .front .name {
+            color: #fff;
+            float: left;
+            margin-left: 5vw;
+            margin-top: 1.5vw;
+            font-size: 60%;
+        }
+    
+        .front .exp {
+            color: #fff;
+            float: right;
+            font-size: 60%;
+            margin-right: 5vw;
+            margin-top: 1.3vw;
+        }
+    
+        .back {
+            background: url(images/bg-card-back.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 10px;
+            height: 25%;
+            position: absolute;
+            left: 20vw;
+            top: 8.1vh;
+            width: 75%;
+            z-index: 1;
+        }
+    
+        .back p {
+            position: fixed;
+            color: #fff;
+            margin-left: 59vw;
+            margin-top: 18.5vw;
+        }
+    
+        .img img {
+            width: 15vw;
         }
 }
